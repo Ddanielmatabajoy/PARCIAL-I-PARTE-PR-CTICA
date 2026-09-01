@@ -1,0 +1,73 @@
+
+:root {
+    --ink: #22303a;
+    --accent: #2f6f6f;
+    --paper: #f4f6f5;
+    --line: #d9deda;
+}
+ .foto-perfil { width: 180px; height: 180px; 
+    object-fit: cover;
+     border-radius: 50%;
+      display: block; margin: 0 auto 20px auto;
+       border: 4px solid #333; }
+body {
+    background-color: var(--paper);
+    color: var(--ink);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem 4rem;
+    line-height: 1.6;
+}
+
+
+.titulo {
+    font-size: 1.4rem;
+    color: var(--accent);
+    text-transform: capitalize;
+    margin-top: 2.5rem;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 2px solid var(--line);
+}
+
+
+body > h1.titulo:first-of-type {
+    font-size: 2.2rem;
+    text-align: center;
+    color: var(--ink);
+    border-bottom: none;
+    margin-top: 0;
+}
+
+
+p {
+    color: #3d4a45;
+    max-width: 65ch;
+}
+
+ul {
+    padding-left: 1.2rem;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 1.5rem 1rem 3rem;
+    }
+
+    body > h1.titulo:first-of-type {
+        font-size: 1.7rem;
+    }
+
+    .titulo {
+        font-size: 1.2rem;
+    }
+}
+.titulo {
+    text-align: center;
+}
